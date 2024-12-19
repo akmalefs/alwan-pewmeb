@@ -533,6 +533,14 @@ form {
     padding: 16px;
   }
 
+  .contact h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grouping-form {
+    flex-direction: column;
+  }
 
   /* Hero */
   .about-boosty {
