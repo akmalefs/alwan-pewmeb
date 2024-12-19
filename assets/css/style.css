@@ -1,0 +1,733 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ed553b;
+  --black-color: #121212;
+  --white-color: #ffffff;
+  --grey-color: #72717b;
+  --background-orange: #f7f6f4;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Style */
+
+.header {
+  width: 100%;
+  background-color: var(--background-orange);
+  margin-bottom: 100px;
+}
+
+.navbar {
+  padding: 50px 0 120px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar .main-menu ul li a {
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: -0.7px;
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar .main-menu ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .nav-btn a {
+  line-height: 1rem;
+  letter-spacing: -0.7px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0 0 100px 0;
+}
+
+.hero .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero .hero-title p {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+}
+
+.hero .hero-title h1 {
+  text-align: center;
+  width: 60%;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 70px;
+  letter-spacing: -0.7px;
+}
+
+.hero .hero-description {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.7px;
+  color: var(--grey-color);
+  text-align: center;
+  font-weight: 500;
+  width: 45%;
+}
+
+.hero .hero-btn a {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+}
+
+/* Video */
+.video-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video-content video {
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+/* How it works */
+.how-it-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-it-work .how-it-work-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.how-it-work .how-it-work-title p {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+}
+
+.how-it-work .how-it-work-title h1 {
+  font-size: 42px;
+  text-align: center;
+  width: 80%;
+  line-height: 54px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+}
+
+.how-it-work .how-it-work-service {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.how-it-work .how-it-work-service .how-it-work-service-card {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .service-text .service-text-title h3 {
+  width: 90%;
+}
+
+.how-it-work .how-it-work-service .how-it-work-service-card .service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-title
+  p {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-title
+  h3 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-description {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.7px;
+  color: var(--grey-color);
+  width: 90%;
+  font-weight: 500;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-btn
+  a {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.7px;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  margin-right: 8px;
+}
+
+.how-it-work
+  .how-it-work-service
+  .how-it-work-service-card
+  .service-text
+  .service-text-btn
+  i {
+  color: var(--primary-color);
+}
+
+.footer-note {
+  margin: 60px 0;
+}
+
+.footer-note .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-note .copyright {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.7px;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+.footer-note .footer-social ul {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-note .footer-social ul li a {
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--grey-color);
+}
+
+/* About Style */
+
+.about-boosty {
+  /* margin-top: 50px; */
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-boosty img {
+  height: 400px;
+  border-radius: 16px;
+}
+
+.about-boosty .about-boosty-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-boosty .about-boosty-title h1 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+  width: 80%;
+  text-align: left;
+}
+
+.about-boosty .about-boosty-title p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.7px;
+  color: var(--grey-color);
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.why-choose-us {
+  margin-top: 80px;
+}
+
+.why-choose-us h1 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+  width: 80%;
+  text-align: left;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Button */
+.btn {
+  display: block;
+  padding: 12px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-lg {
+  display: block;
+  padding: 18px 60px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid var(--black-color);
+}
+
+.btn-black {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Mobile Menu */
+.navbar .hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3 ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3;
+  font-weight: 600;
+  line-height: -0.7px;
+}
+
+.mobile-menu .nav-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* contact */
+.contact h1 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+  width: 80%;
+  text-align: left;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 20px;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group .form-control:focus {
+  border-color: var(--primary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.grouping-form {
+  display: flex;
+  gap: 20px;
+}
+
+.grouping-form .form-group {
+  width: 100%;
+}
+
+.form-button {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 80px;
+}
+
+/* Media Query */
+@media (max-width: 960px) {
+  /* form */
+  .contact{
+    padding: 16px;
+  }
+
+
+  /* Hero */
+  .about-boosty {
+    padding: 16px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-boosty img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .how-it-work .how-it-work-title h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-boosty .about-boosty-title h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-boosty .about-boosty-title p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-hero {
+    padding: 16px;
+  }
+  .about-hero .about-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .about-hero .about-header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .about-hero .about-header p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .main-menu,
+  .navbar .nav-btn {
+    display: none;
+  }
+
+  .navbar .hamburger-button {
+    display: block;
+  }
+
+  .navbar .mobile-menu .nav-btn {
+    display: block;
+  }
+
+  .navbar .mobile-menu .nav-btn a {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  /* Hero */
+  .hero .hero-title h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 48px;
+    letter-spacing: -0.7px;
+  }
+
+  .hero .hero-description {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.7px;
+    color: var(--grey-color);
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  /* How it Works */
+  .how-it-work .how-it-work-title p {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+  }
+
+  .how-it-work .how-it-work-title h1 {
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+  }
+
+  .how-it-work .how-it-work-service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .how-it-work .how-it-work-service .how-it-work-service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .mobile-image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .how-it-work
+    .how-it-work-service
+    .how-it-work-service-card
+    .service-text
+    .service-text-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .how-it-work
+    .how-it-work-service
+    .how-it-work-service-card
+    .service-text
+    .service-text-title
+    p {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+  }
+
+  .how-it-work
+    .how-it-work-service
+    .how-it-work-service-card
+    .service-text
+    .service-text-title
+    h3 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .how-it-work
+    .how-it-work-service
+    .how-it-work-service-card
+    .service-text
+    .service-text-description {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.7px;
+    color: var(--grey-color);
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .how-it-work .how-it-work-service .how-it-work-service-card .service-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .how-it-work
+    .how-it-work-service
+    .how-it-work-service-card
+    .service-text
+    .service-text-btn {
+    text-align: center;
+  }
+
+  .footer-note .container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .footer-note .copyright {
+    text-align: center;
+    line-height: 22px;
+  }
+}
